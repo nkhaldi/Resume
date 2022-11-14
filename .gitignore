@@ -1,3 +1,2 @@
 __pycache__/
-/proglib_itfinder/db.sqlite3
-/proglib_stihi/db.sqlite3
+db.sqlite3
