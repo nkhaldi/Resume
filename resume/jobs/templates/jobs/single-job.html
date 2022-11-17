@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Шаблон для отдельной работы</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Подробная информация о работе</h1>
+    <h3>Работа {{ job.id }}</h3>
+    <p>{{ job.title }}</p><br>
+    <ul>
+      {% for tag in job.tags.all %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+    <em>{{ job.description }}</em>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Шаблон для вывода работ</title>
+  </head>
+  <body>
+    <h2>Здесь будут мои работы</h2>
+    {% for job in jobs %}
+      <p>Номер работы: #{{ job.id }}</p>
+      <h3>Название работы: <a href="{% url 'job' job.id %}">{{ job.title }}</a></h3>
+      <em>{{ job.description }}</em>
+    {% endfor %}
+  </body>
+</html>
